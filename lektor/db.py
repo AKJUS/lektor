@@ -1171,7 +1171,7 @@ class Query:
         yield from iterable
 
     def __repr__(self):
-        alt_ = " alt={self.alt!r}" if self.alt else ""
+        alt_ = f" alt={self.alt!r}" if self.alt else ""
         return f"<{self.__class__.__name__} {self.path!r}{alt_}>"
 
 
